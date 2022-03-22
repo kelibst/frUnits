@@ -80,15 +80,15 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}
     >
       <BottomTab.Screen
-        name="TabOne"
+        name="Home"
         component={HomeScreen}
-        options={({ navigation }: RootTabScreenProps<"TabOne">) => ({
+        options={({ navigation }: RootTabScreenProps<"Home">) => ({
           title: "Home",
           tabBarIcon: ({ color, focused, size }) => (
             <Ionicons
@@ -115,10 +115,10 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Account"
         component={TabTwoScreen}
         options={{
-          title: "Tab Two",
+          title: "Account",
           tabBarIcon: ({ color, focused, size }) => (
             <Ionicons
               name={focused ? "person-circle" : "person-circle-outline"}
