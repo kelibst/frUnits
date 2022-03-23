@@ -8,7 +8,7 @@ import { RootTabScreenProps } from "../types";
 function HomeScreen({ navigation }: RootTabScreenProps<"Home">) {
   return (
     <View style={mainStyles.container}>
-      <Text>Home content</Text>
+      <Text style={{ color: "black" }}>Home content</Text>
     </View>
   );
 }
